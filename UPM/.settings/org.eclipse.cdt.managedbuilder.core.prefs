@@ -1,0 +1,23 @@
+com.ti.ccstudio.buildDefinitions.C2000.Debug.1982434358/internalBuilder/enabled=false
+com.ti.ccstudio.buildDefinitions.C2000.Debug.1982434358/internalBuilder/ignoreErr=true
+com.ti.ccstudio.buildDefinitions.C2000.Debug.386207262/internalBuilder/enabled=false
+com.ti.ccstudio.buildDefinitions.C2000.Debug.386207262/internalBuilder/ignoreErr=true
+com.ti.ccstudio.buildDefinitions.C2000.Debug.668909736/internalBuilder/enabled=false
+com.ti.ccstudio.buildDefinitions.C2000.Debug.668909736/internalBuilder/ignoreErr=true
+com.ti.ccstudio.buildDefinitions.C2000.Release.1048331509/internalBuilder/enabled=false
+com.ti.ccstudio.buildDefinitions.C2000.Release.1048331509/internalBuilder/ignoreErr=true
+com.ti.ccstudio.buildDefinitions.C2000.Release.1130230437/internalBuilder/enabled=false
+com.ti.ccstudio.buildDefinitions.C2000.Release.1130230437/internalBuilder/ignoreErr=true
+com.ti.ccstudio.buildDefinitions.C2000.Release.1556147064/internalBuilder/enabled=false
+com.ti.ccstudio.buildDefinitions.C2000.Release.1556147064/internalBuilder/ignoreErr=true
+com.ti.ccstudio.buildDefinitions.C2000.Release.445275718/internalBuilder/enabled=false
+com.ti.ccstudio.buildDefinitions.C2000.Release.445275718/internalBuilder/ignoreErr=true
+com.ti.ccstudio.buildDefinitions.C2000.Release.823865585/internalBuilder/enabled=false
+com.ti.ccstudio.buildDefinitions.C2000.Release.823865585/internalBuilder/ignoreErr=true
+com.ti.ccstudio.buildDefinitions.C2000.Release.858634486/internalBuilder/enabled=false
+com.ti.ccstudio.buildDefinitions.C2000.Release.858634486/internalBuilder/ignoreErr=true
+com.ti.ccstudio.buildDefinitions.C2000.Release.983933265/internalBuilder/enabled=false
+com.ti.ccstudio.buildDefinitions.C2000.Release.983933265/internalBuilder/ignoreErr=true
+eclipse.preferences.version=1
+environment/project=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<environment/>\r\n
+environment/project/com.ti.ccstudio.buildDefinitions.C2000.Release.445275718=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<environment/>\r\n

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?fileVersion 3.1.0?>
+
+<ManagedProjectBuildInfo>
+<project id="Essential_UPM.com.ti.ccstudio.buildDefinitions.C2000.ProjectType.1201832189" name="C2000" projectType="com.ti.ccstudio.buildDefinitions.C2000.ProjectType">
+<configuration artifactExtension="out" artifactName="Essential_UPM" description="" id="com.ti.ccstudio.buildDefinitions.C2000.Release.445275718" name="Release" parent="com.ti.ccstudio.buildDefinitions.C2000.Release" postannouncebuildStep="Post-build batch file" postbuildStep="&quot;${PROJECT_ROOT}/build/post_build.bat&quot; &quot;${CG_TOOL_ROOT}/bin/hex${CG_TOOL_SUFFIX}.exe&quot; &quot;${BuildArtifactFileName}&quot; &quot;${BuildArtifactFileBaseName}.hex&quot;" preannouncebuildStep="" prebuildStep="">
+<toolChain id="com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.ReleaseToolchain.1653293269" name="TI Code Generation Tools" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.ReleaseToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.linkerRelease.1930298695">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.1912307527" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=TMS320C28XX.TMS320F28335"/>
+<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
+<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF"/>
+<listOptionValue builtIn="false" value="CCS_MBS_VERSION=4.2.0"/>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE="/>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY=rts2800_fpu32.lib"/>
+<listOptionValue builtIn="false" value="DSPBIOS_VERSION=5.41.09.34"/>
+<listOptionValue builtIn="false" value="IS_ELF=false"/>
+<listOptionValue builtIn="false" value="PROJECT_KIND=com.ti.ccstudio.managedbuild.core.ProjectKind_Executable"/>
+<listOptionValue builtIn="false" value="OUTPUT_TYPE=bios5Application:rtscApplication:executable"/>
+<listOptionValue builtIn="false" value="IS_ASSEMBLY_ONLY=false"/>
+<listOptionValue builtIn="false" value="LINK_ORDER=lib/rts2800_fpu32_fast_supplement.lib;&quot;$(GEN_CMDS_QUOTED)&quot;;-l&quot;rts2800_fpu32.lib&quot;;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.2019754648" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="5.2.10" valueType="string"/>
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.compilerRelease.1951815294" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.compilerRelease">
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.DIAG_WARNING.1626269164" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.DIAG_WARNING" valueType="stringList">
+<listOptionValue builtIn="false" value="225"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.LARGE_MEMORY_MODEL.338128087" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.LARGE_MEMORY_MODEL" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.UNIFIED_MEMORY.278120963" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.UNIFIED_MEMORY" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.SILICON_VERSION.1233739070" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.SILICON_VERSION" value="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.SILICON_VERSION.28" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.FLOAT_SUPPORT.1877141561" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.FLOAT_SUPPORT" value="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.FLOAT_SUPPORT.fpu32" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.DEBUGGING_MODEL.255525533" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.DEBUGGING_MODEL" value="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.DEBUGGING_MODEL.SYMDEBUG__NONE" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.INCLUDE_PATH.1991868503" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Source/Controls/ParallelAutoCal&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Source/Controls/ExtSync&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Source/StateMachines/Bypass/RealBypass&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Source/StateMachines/Bypass/SlaveBypass&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Source/StateMachines/Bypass&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Source/SystemTrap&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Source/BootloaderAPI&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Source/Controls/BatteryConverter&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Source/Controls/PLL&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Source/Battery&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Source/Alarms&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Source&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Source/CAN&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Source/Controls/ControlAlgos&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Source/Controls/Inverter&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Source/Controls/Rectifier&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/TIdsp&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Source/ADC&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Source/Controls&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Source/Debugger&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Source/DSPport&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Source/Eeprom&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Source/I2c_Port&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Source/Meters&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Source/Nodebits&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Source/PeriodicSWI&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Source/PeriodicTSK&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Source/Queues&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Source/RTC&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Source/StateMachines&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_BUILD_DIR}&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${BIOS_INCLUDE_DIR}&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${RTDX_INCLUDE_DIR}&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.DIAG_REMARK.424541654" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.DIAG_REMARK" valueType="stringList">
+<listOptionValue builtIn="false" value="303"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.DIAG_ERROR.1848590926" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.DIAG_ERROR" valueType="stringList">
+<listOptionValue builtIn="false" value="225"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.DISPLAY_ERROR_NUMBER.590247744" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.DISPLAY_ERROR_NUMBER" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.ISSUE_REMARKS.1901339928" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.ISSUE_REMARKS" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.OPTIMIZE_WITH_DEBUG.1011677568" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.OPTIMIZE_WITH_DEBUG" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.OPT_FOR_SPEED.45905663" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.OPT_FOR_SPEED" value="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.OPT_FOR_SPEED.5" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.OPTIMIZER_INTERLIST.1939058235" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.OPTIMIZER_INTERLIST" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.KEEP_ASM.112011813" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.KEEP_ASM" value="true" valueType="boolean"/>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.linkerRelease.1930298695" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.linkerRelease">
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.linkerID.STACK_SIZE.1326665616" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.linkerID.STACK_SIZE" value="0x300" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.linkerID.OUTPUT_FILE.1393536820" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.linkerID.OUTPUT_FILE" value="&quot;Essential_UPM.out&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.linkerID.MAP_FILE.789278295" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.linkerID.MAP_FILE" value="&quot;Essential_UPM.map&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.linkerID.DISPLAY_ERROR_NUMBER.56146090" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.linkerID.DISPLAY_ERROR_NUMBER" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.linkerID.DIAG_SUPPRESS.1638025482" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.linkerID.DIAG_SUPPRESS" valueType="stringList">
+<listOptionValue builtIn="false" value="10063"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.linkerID.generatedLinkerCommandFiles.1848720572" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.linkerID.generatedLinkerCommandFiles" valueType="libs">
+<listOptionValue builtIn="false" value="&quot;$(GEN_CMDS_QUOTED)&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.linkerID.SEARCH_PATH.2141743294" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.linkerID.SEARCH_PATH" valueType="stringList">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${RTDX_LIB_DIR}&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${BIOS_LIB_DIR}&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.linkerID.PRIORITY.1109606659" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.linkerID.PRIORITY" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.linkerID.DISABLE_AUTO_RTS.203224630" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.linkerID.DISABLE_AUTO_RTS" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.linkerID.ENTRY_POINT.323138294" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.linkerID.ENTRY_POINT" value="code_start" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.linkerID.LIBRARY.1144732739" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.linkerID.LIBRARY" valueType="libs">
+<listOptionValue builtIn="false" value="&quot;rts2800_fpu32.lib&quot;"/>
+</option>
+</tool>
+<tool id="com.ti.rtsc.buildDefinitions.DSPBIOS_5.40.tool.31237114" name="TConf Script Compiler" superClass="com.ti.rtsc.buildDefinitions.DSPBIOS_5.40.tool"/>
+<macros expandEnvironmentMacros="true"/>
+</toolChain>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Release.445275718./Panda28335/Source/Crypto/aes_modes.c" name="aes_modes.c" rcbsApplicability="disable" resourcePath="/Panda28335/Source/Crypto/aes_modes.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.compilerRelease.1951815294./Panda28335/Source/Crypto/aes_modes.c">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.compilerRelease.1951815294./Panda28335/Source/Crypto/aes_modes.c" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.compilerRelease.1951815294"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Release.445275718./Panda28335/Source/Crypto/aescrypt.c" name="aescrypt.c" rcbsApplicability="disable" resourcePath="/Panda28335/Source/Crypto/aescrypt.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.compilerRelease.1951815294./Panda28335/Source/Crypto/aescrypt.c">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.compilerRelease.1951815294./Panda28335/Source/Crypto/aescrypt.c" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.compilerRelease.1951815294">
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.DIAG_WARNING.162966098" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.DIAG_WARNING" valueType="stringList">
+<listOptionValue builtIn="false" value="&quot;225&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.DIAG_REMARK.542280307" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.DIAG_REMARK" valueType="stringList">
+<listOptionValue builtIn="false" value="&quot;303&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.DIAG_ERROR.1371988365" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.DIAG_ERROR" valueType="stringList">
+<listOptionValue builtIn="false" value="&quot;225&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.DIAG_SUPPRESS.2047056490" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.compilerID.DIAG_SUPPRESS" valueType="stringList">
+<listOptionValue builtIn="false" value="&quot;238&quot;"/>
+</option>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Release.445275718./Panda28335/Source/Crypto/aeskey.c" name="aeskey.c" rcbsApplicability="disable" resourcePath="/Panda28335/Source/Crypto/aeskey.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.compilerRelease.1951815294./Panda28335/Source/Crypto/aeskey.c">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.compilerRelease.1951815294./Panda28335/Source/Crypto/aeskey.c" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.compilerRelease.1951815294"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Release.445275718./Panda28335/Source/Crypto/aestab.c" name="aestab.c" rcbsApplicability="disable" resourcePath="/Panda28335/Source/Crypto/aestab.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.compilerRelease.1951815294./Panda28335/Source/Crypto/aestab.c">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.compilerRelease.1951815294./Panda28335/Source/Crypto/aestab.c" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_5.2.exe.compilerRelease.1951815294"/>
+</resourceConfiguration>
+</configuration>
+<macros/>
+</project>
+</ManagedProjectBuildInfo>

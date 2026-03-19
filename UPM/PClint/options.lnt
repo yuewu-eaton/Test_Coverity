@@ -1,0 +1,9 @@
+// Please note -- this is a representative set of error suppression
+//                options.  Please adjust to suit your own policies
+//                See  manual (chapter LIVING WITH LINT)
+//                for further details.
+
+
+// Special error handling for Panda 9E
+-efunc(825, EE_versionUpdate_LV)
+-efunc(825, EE_versionUpdate_HV)

@@ -1,0 +1,48 @@
+
+// Includes
+-i"C:\ti\bios_5_41_13_42\packages\ti\rtdx\include\c2000"
+-i".\C2000 Code Generation Tools 5.2.10\include"
+-i"C:\ti\bios_5_41_13_42\packages"
+-i"C:\ti\bios_5_41_13_42\packages\ti\bios\include"
+".\LintHeaderFolder.lnt"
+
+// Definitions (taken from the project's CDT settings)
+-d"__DATE__=__DATE__"
+-d"__LINE__=__LINE__"
+-d"__unsigned_chars=1"
+-d"__TIME__=__TIME__"
+-d"__TI_COMPILER_VERSION=__TI_COMPILER_VERSION"
+-d"__SIZE_T_TYPE=unsigned"
+-d"__FILE__=__FILE__"
+-d"__va_argref(_type)=true"
+-d"__PTRDIFF_T_TYPE=int"
+
+// Library message level
+-wlib(1)
+
+// Close all errors
+-e?
+-e1?
+-e2?
+-e3?
+-e4?
+-e5?
+-e6?
+-e7?
+-e8?
+-e9?
+-e1??
+-e2??
+-e3??
+-e4??
+-e5??
+-e6??
+-e7??
+-e8??
+-e9??
+-e830
+// Apply eaton coding standard rules
+".\EatonCodingStandardRules.lnt"
+
+// Own Lint file
+".\options.lnt"

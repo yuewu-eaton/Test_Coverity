@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launchConfiguration type="com.ti.ccstudio.debug.core.CCELaunchType">
+<booleanAttribute key="org.eclipse.debug.ui.ATTR_LAUNCH_IN_BACKGROUND" value="false"/>
+<stringAttribute key="CCEDebugOptions.DEBUG_PROPERTIES.Spectrum Digital DSK-EVM-eZdsp onboard USB Emulator_0/C28xx" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot; ?&gt;&#10;&lt;PropertyValues&gt;&#10;&#10;  &lt;property id=&quot;ConnectOnStartup&quot;&gt;&#10;    &lt;curValue&gt;1&lt;/curValue&gt;&#10;  &lt;/property&gt;&#10;&#10;&lt;/PropertyValues&gt;&#10;"/>
+<booleanAttribute key="com.ti.ccstudio.debug.core.MRU_PROGRAM_S_ONLY" value="false"/>
+<stringAttribute key="CCEDebugOptions.CPU_RESOLVE_OPTION" value="exact"/>
+<stringAttribute key="org.eclipse.debug.ui.DISPLAY_NAME" value="Panda28335 [Release] - Spectrum Digital C2000 XDS510LC Emulator_0/C28xx"/>
+<stringAttribute key="CCEDebugOptions.DEBUG_PROPERTIES.Spectrum Digital XDS510USB Emulator_0/C28xx" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot; ?&gt;&#10;&lt;PropertyValues&gt;&#10;&#10;  &lt;property id=&quot;ConnectOnStartup&quot;&gt;&#10;    &lt;curValue&gt;1&lt;/curValue&gt;&#10;  &lt;/property&gt;&#10;&#10;&lt;/PropertyValues&gt;&#10;"/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_REGISTER_GROUPS" value=""/>
+<stringAttribute key="CCEDebugOptions.LOADING_OPTION" value="program"/>
+<stringAttribute key="CCEDebugOptions.DEBUG_PROPERTIES.Texas Instruments XDS100v1 USB Emulator_0/C28xx" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot; ?&gt;&#10;&lt;PropertyValues&gt;&#10;&#10;  &lt;property id=&quot;ConnectOnStartup&quot;&gt;&#10;    &lt;curValue&gt;1&lt;/curValue&gt;&#10;  &lt;/property&gt;&#10;&#10;&lt;/PropertyValues&gt;&#10;"/>
+<stringAttribute key="CCEDebugOptions.DEBUG_PROPERTIES.Spectrum Digital XDS510 Parallel Port-PCI  Emulator_0/C28xx" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot; ?&gt;&#10;&lt;PropertyValues&gt;&#10;&#10;  &lt;property id=&quot;ResetOnRestart&quot;&gt;&#10;    &lt;curValue&gt;1&lt;/curValue&gt;&#10;  &lt;/property&gt;&#10;&#10;  &lt;property id=&quot;ConnectOnStartup&quot;&gt;&#10;    &lt;curValue&gt;1&lt;/curValue&gt;&#10;  &lt;/property&gt;&#10;&#10;  &lt;property id=&quot;AutoResetOnConnect&quot;&gt;&#10;    &lt;curValue&gt;0&lt;/curValue&gt;&#10;  &lt;/property&gt;&#10;&#10;&lt;/PropertyValues&gt;&#10;"/>
+<stringAttribute key="CCEDebugOptions.CPU_ISA" value="TMS320C28xx"/>
+<stringAttribute key="CCEDebugOptions.DEBUG_PROPERTIES.Signum JTAGjet Emulator_0/C28xx" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot; ?&gt;&#10;&lt;PropertyValues&gt;&#10;&#10;  &lt;property id=&quot;ConnectOnStartup&quot;&gt;&#10;    &lt;curValue&gt;1&lt;/curValue&gt;&#10;  &lt;/property&gt;&#10;&#10;&lt;/PropertyValues&gt;&#10;"/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_ID" value="com.ti.ccstudio.debug.core.CCEDebugger"/>
+<mapAttribute key="com.ti.ccstudio.debug.core.VARIABLE_STATE"/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="run"/>
+<stringAttribute key="CCEDebugOptions.DEBUG_PROPERTIES.Spectrum Digital C2000 XDS510LC Emulator_0/C28xx" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot; ?&gt;&#10;&lt;PropertyValues&gt;&#10;&#10;  &lt;property id=&quot;ConnectOnStartup&quot;&gt;&#10;    &lt;curValue&gt;1&lt;/curValue&gt;&#10;  &lt;/property&gt;&#10;&#10;&lt;/PropertyValues&gt;&#10;"/>
+<stringAttribute key="com.ti.ccstudio.debug.core.DISPLAY_NAME_FORMAT" value="Panda28335 [Release] - {0}"/>
+<stringAttribute key="CCEDebugOptions.TARGET_CONFIGURATION_OPTION" value="full"/>
+<stringAttribute key="org.eclipse.cdt.launch.MEMORY_BLOCKS" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;memoryBlockExpressionList/&gt;&#13;&#10;"/>
+<stringAttribute key="com.ti.ccstudio.debug.core.MRU_PROGRAM_NAME" value="C:\Documents and Settings\E0085741\Desktop\PandaCCS\Panda28335\Release\Essential_UPM.out"/>
+<stringAttribute key="CCEDebugOptions.CPU_NAME" value="Spectrum Digital C2000 XDS510LC Emulator_0/C28xx"/>
+<stringAttribute key="com.ti.ccstudio.debug.core.MRU_MODULES" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;modules&gt;&#13;&#10;&lt;module name=&quot;C:\Projects\Panda\Work\Panda28335\Debug\Panda28335.out&quot; time=&quot;Fri Mar 05 16:32:26 EST 2010&quot; time_long=&quot;1267824746415&quot;/&gt;&#13;&#10;&lt;module name=&quot;C:\Src\Panda\Essential_UPM\trunk\Debug\Essential_UPM.out&quot; time=&quot;Thu Apr 15 11:25:22 EDT 2010&quot; time_long=&quot;1271345122262&quot;/&gt;&#13;&#10;&lt;module name=&quot;C:\Documents and Settings\e0085741\Desktop\PandaCCS\Panda28335\Release\Essential_UPM.out&quot; time=&quot;Tue May 18 14:22:30 EDT 2010&quot; time_long=&quot;1274206950906&quot;/&gt;&#13;&#10;&lt;module name=&quot;C:\Projects\Panda\SVN\Firmware_Packages\Essential_UPM\trunk\Release\Essential_UPM.out&quot; time=&quot;Fri Jul 30 16:03:27 EDT 2010&quot; time_long=&quot;1280520207546&quot;/&gt;&#13;&#10;&lt;module name=&quot;C:\Documents and Settings\E0085741\Desktop\PandaCCS\Panda28335\Release\Essential_UPM.out&quot; time=&quot;Thu Nov 18 12:54:38 EST 2010&quot; time_long=&quot;1290102878793&quot;/&gt;&#13;&#10;&lt;/modules&gt;&#13;&#10;"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="Panda28335"/>
+<stringAttribute key="org.eclipse.cdt.launch.GLOBAL_VARIABLES" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;globalVariableList/&gt;&#13;&#10;"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Release/Essential_UPM.out"/>
+<stringAttribute key="com.ti.ccstudio.debug.core.BUILD_CONFIGURATION" value="Release"/>
+<stringAttribute key="CCEDebugOptions.TARGET_CONFIGURATION_FILE" value="C:/Documents and Settings/E0085741/user/CCSTargetConfigurations/SDDesktopConfiguration.ccxml"/>
+</launchConfiguration>

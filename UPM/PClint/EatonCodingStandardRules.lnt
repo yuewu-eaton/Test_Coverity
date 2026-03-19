@@ -1,0 +1,265 @@
+// ---------------------------------------------------------------------
+// This file is provided by Eaton Corperation for use with
+// its products PC-lint and FlexeLint.
+//
+// Redistribution and use of this file, with or without modification, is
+// permitted provided that any such redistribution retains this notice.
+// ---------------------------------------------------------------------
+
+// EatonCodingStandardRules.lnt -- Author options - EATON
+
+/*
+    Reference from MISRA 2004 rules
+
+ */
+    -misra(2)
+    +e960                      /* enable special MISRA 2 messages */
+    +elib(960)
+    +e961                      /* enable special MISRA 2 messages */
+    +elib(961)
+
+
+/* MISRA Rule 2.3 (req) **********************************/
+
+    -fnc                   /* flag nested comments */
+    +e602                  /* comment within comment */
+    +elib(602)
+    -append(602,[EATON Coding Standard Rule 3-2-1, required])
+
+/* MISRA Rule 2.4 (adv) **********************************/
+
+    /* This requirement (that there be no commented-out code) is, in
+       principle, not statically checkable.  The reason given for the
+       requirement is that comments do not nest.  Thus a commented
+       out section of code that happens to use slash-star commenting
+       could inadvertently introduce unwanted code.  Rule 2.3, however,
+       addresses the nested comment issue and hence the major concern
+       that this requirement seeks to address is indeed checkable.
+     */
+    -fnc                   /* flag nested comments */
+    +e602                  /* comment within comment */
+    +elib(602)
+    -append(602,[EATON Coding Standard Rule 3-2-2, advisory])
+
+/* MISRA Rule 8.2 (req) **********************************/
+
+    +e745                           /* function has no explicit type */
+    +elib(745)
+    -append(745,[EATON Coding Standard Rule 5-1-5, required])
+    +e939                           /* return type defaults to int */
+    +elib(939)
+    -append(939,[EATON Coding Standard Rule 5-1-5, required])
+
+/* Rule 8.8 (req) **********************************/
+
+    /* we generate note 960 as follows:
+       Note 960: Violates [EATON Coding Standard Rule 8-1-6, required],
+       Object/function previously declared
+     */
+     
+/* MISRA Rule 9.1 (req) **********************************/
+
+    +e644                   /* Symbol may not have been initialized */
+    +elib(644)
+    -append(644,[EATON Coding Standard Rule 5-1-1, required])
+    +e771                   /* Symbol conceivably not initialized */
+    +elib(771)
+    -append(771,[EATON Coding Standard Rule 5-1-1, required])
+    +e530                   /* Symbol not initialized */
+    +elib(530)
+    -append(530,[EATON Coding Standard Rule 5-1-1, required])
+
+/* MISRA Rule 11.5 (req) *********************************/
+
+    /* we generate note 960 as follows:
+       Note 960: [EATON Coding Standard Rule 7-2-7, advisory],
+       Attempt to cast away const/volatile from a pointer or reference
+     */
+
+/* MISRA Rule 12.1 (adv) *********************************/
+
+    /* we generate note 961 as follows:
+       Note 961: [EATON Coding Standard Rule 5-2-2, required],
+       dependence placed on C's operator precedence
+     */
+    +e834        /* confusing operator sequence (same precedence) */
+    +elib(834)
+    -append(834,[EATON Coding Standard Rule 5-2-2, required])
+
+
+/* MISRA Rule 12.3 (req) *********************************/
+
+    /* we generate note 960 as follows:
+       Note 960: [EATON Coding Standard Rule 5-2-8, required],
+       'sizeof' used on expression with side effect
+     */
+
+/* MISRA Rule 12.5 (req) *********************************/
+
+    /* we generate note 960 as follows:
+       Note 960: Violates MISRA 2004 Required Rule 12.5,
+       Non-primary expression used with logical operator
+     */
+     
+/* Rule 13.1 (req) *********************************/
+
+    +e720                    /* Boolean test of assignment */
+    +elib(720)
+    -append(720,[EATON Coding Standard Rule 5-2-9, required])
+    +e820                    /* Boolean test of parenthesized
+                                assignment */
+    +elib(820)
+    -append(820,[MISRA 2004 Rule 13.1, required,])
+    /* we generate note 960 as follows:
+       Note 960: [EATON Coding Standard Rule 5-2-9, required],
+       assignment operator used in boolean expression
+     */
+
+/* Rule 13.2 (adv) *********************************/
+
+    +e720                    /* Boolean test of assignment */
+    +elib(720)
+    -append(720,[EATON Coding Standard Rule 5-2-1, required])
+
+/* Rule 13.3 (req) *********************************/
+
+    +e777                    /* testing floats for equality */
+    +elib(777)
+    -append(777,[EATON Coding Standard Rule 5-2-1, required])
+    /* we generate note 960 as follows:
+       Note 960: [EATON Coding Standard Rule 5-2-1, required],
+       floating point test for equality or inequality
+     */
+       
+/* MISRA Rule 13.4 (req) *********************************/
+
+    /* we generate note 960 as follows:
+       Note 960: [EATON Coding Standard Rule 9-2-2, required],
+       floating point variable used as loop counter
+     */
+
+/* MISRA Rule 13.5 (req) *********************************/
+
+    +e440       /* Compare 2nd 'for' expression with the 3rd */
+    +elib(440)
+    -append(440,[EATON Coding Standard Rule 9-2-3, required])
+    +e443       /* Compare 1st 'for' expression with the 3rd */
+    +elib(443)
+    -append(443,[EATON Coding Standard Rule 9-2-3, required])
+
+/* MISRA Rule 14.4 (req) *********************************/
+
+    +e801       /* use of 'goto' is deprecated */
+    +elib(801)
+    -append(801,[EATON Coding Standard Rule 9-5-1, required])
+
+/* MISRA Rule 14.8 (req) *********************************/
+
+    /* we generate note 960 as follows:
+       Note 960: Violates MISRA 2004 Required Rule 14.8,
+       left brace expected for switch, for, do and while
+     */
+
+/* MISRA Rule 14.9 (req) *********************************/
+
+    /* we generate note 960 as follows:
+       Note 960: Violates MISRA 2004 Required Rule 14.9,
+       left brace expected for if, else and else if
+     */
+
+/* MISRA Rule 14.10 (req) ********************************/
+
+    /* we generate note 960 as follows:
+       Note 960: Violates MISRA 2004 Required Rule 14.10,
+       no 'else' at end of 'if ... else if' chain
+     */
+
+/* MISRA Rule 15.2 (req) *********************************/
+
+    +e616                 /* control flows into case/default */
+    +elib(616)
+    -append(616,[EATON Coding Standard Rule 9-3-1, required])
+    +e825                 /* control flows into case/default without
+                             -fallthrough comment
+                           */
+    +elib(825)
+    -append(825,[EATON Coding Standard Rule 9-3-1, required])
+    /* we generate note 960 as follows:
+       Note 960: Violates MISRA 2004 Required Rule 15.2,
+       missing unconditional break from switch case
+     */
+
+/* MISRA Rule 15.3 (req) *********************************/
+
+    +e744            /* switch statement has no default */
+    +elib(744)
+    -append(744,[EATON Coding Standard Rule 9-3-2, required])
+    /* we also generate note 960 as follows:
+       Note 960: Violates MISRA 2004 Required Rule 15.3,
+       case label follows default in switch statement or
+       default missing from switch statement
+     */
+
+
+/* MISRA Rule 15.5 (req) *********************************/
+
+    +e764            /* switch does not have a case */
+    +elib(764)
+    -append(764,[EATON Coding Standard Rule 9-3-3, required])
+
+/* MISRA Rule 16.1 (req) *********************************/
+
+    /* we generate note 960 as follows:
+       Note 960: Violates MISRA 2004 Required Rule 16.1,
+       function has variable number of arguments
+     */
+
+
+/* MISRA Rule 16.3 (req) *********************************/
+
+    /* we generate note 960 as follows:
+       Note 960: Violates MISRA 2004 Required Rule 16.3,
+       all parameters shall have identifiers
+     */
+
+/* MISRA Rule 16.4 (req) *********************************/
+
+    /* we generate note 960 as follows:
+       Note 960: Violates MISRA 2004 Required Rule 16.4,
+       Function parameter list differs from prior declaration
+     */
+
+/* MISRA Rule 16.5 (req) *********************************/
+
+    +e937        /* old-style function declaration */
+    +elib(937)
+    -append(937,[EATON Coding Standard Rule 8-1-1, required])
+
+
+/* MISRA Rule 16.7 (adv) *********************************/
+
+    +e818                /* use const on paramaters where appropriate */
+    +elib(818)
+    -append(818,[EATON Coding Standard Rule 8-1-2, advisory])
+
+/* MISRA Rule 16.8 (req) *********************************/
+
+    +e533                /* function should return a value */
+    +elib(533)
+    -append(533,[EATON Coding Standard Rule 8-2-2, required])
+
+/* MISRA Rule 17.5 (adv) *********************************/
+
+    /* we generate note 961 as follows:
+       Note 961: Violates MISRA 2004 Advisory Rule 17.5,
+       More than two pointer indirection levels used
+     */
+
+/* MISRA Rule 17.6 (req) *********************************/
+
+    +e733               /* assigning address of auto to outer scope symbol */
+    +elib(733)
+    -append(733,[EATON Coding Standard Rule 8-2-3, required])
+    +e789               /* assigning address of auto to static */
+    +elib(789)
+    -append(789,[EATON Coding Standard Rule 8-2-3, required])
