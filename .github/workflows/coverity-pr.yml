@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run Coverity Scan
-        uses: synopsys-sig-community/synopsys-github-templates/coverity@master
+        uses: synopsys-sig-community/synopsys-github-templates/coverity@main
         with:
           coverity-url: ${{ secrets.COVERITY_URL }}
           coverity-user: ${{ secrets.COVERITY_USER }}
