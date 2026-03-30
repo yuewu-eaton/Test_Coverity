@@ -75,7 +75,7 @@ extern "C" {
 
 // For 93PRT 9.00.0005
 #define CONST_FirmwareVersion       1100 //902     //New 0.1.1 for Hobbit (basic 93E: 2.14.6)
-#define CONST_FirmwareBuildNum      66 //9
+#define CONST_FirmwareBuildNum      77 //9
 
 
 
