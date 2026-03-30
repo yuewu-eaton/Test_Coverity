@@ -1,0 +1,31 @@
+name: Coverity Scan (PR)
+
+on:
+  pull_request:
+    branches:
+      - main
+      - master
+      - develop
+
+jobs:
+  coverity:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source
+        uses: actions/checkout@v4
+
+      - name: Run Coverity Scan
+        uses: synopsys-sig-community/synopsys-github-templates/coverity@master
+        with:
+          coverity-url: ${{ secrets.COVERITY_URL }}
+          coverity-user: ${{ secrets.COVERITY_USER }}
+          coverity-passphrase: ${{ secrets.COVERITY_PASSPHRASE }}
+
+          coverity-project-name: ${{ github.event.repository.name }}
+
+          create-stream-and-project: true
+
+          coverity_prComment_enabled: true
+
+          github-token: ${{ secrets.GITHUB_TOKEN }}
