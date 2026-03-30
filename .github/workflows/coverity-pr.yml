@@ -18,14 +18,21 @@ jobs:
       - name: Run Coverity Scan
         uses: blackduck-inc/black-duck-security-scan@v2
         with:
-          coverity-url: ${{ secrets.COVERITY_URL }}
-          coverity-user: ${{ secrets.COVERITY_USER }}
-          coverity-passphrase: ${{ secrets.COVERITY_PASSPHRASE }}
+          # ✅ 明确启用 Coverity 产品
+          coverity_enabled: true
 
-          coverity-project-name: ${{ github.event.repository.name }}
+          # ✅ Coverity 服务地址（这是报错里要求的）
+          coverity_url: ${{ secrets.COVERITY_URL }}
 
-          create-stream-and-project: true
+          # ✅ 身份认证
+          coverity_user: ${{ secrets.COVERITY_USER }}
+          coverity_passphrase: ${{ secrets.COVERITY_PASSPHRASE }}
 
+          # ✅ Project 名称
+          coverity_project_name: ${{ github.event.repository.name }}
+
+          # ✅ PR 评论
           coverity_prComment_enabled: true
 
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          # ✅ GitHub Token
+          github_token: ${{ secrets.GITHUB_TOKEN }}
