@@ -19,7 +19,7 @@ jobs:
         uses: blackduck-inc/black-duck-security-scan@v2
         with:
           # ✅ 明确启用 Coverity 产品
-          bridge_disable_tls_validation: true
+          bridge_download_insecure: true
 
           # ✅ Coverity 服务地址（这是报错里要求的）
           coverity_url: ${{ secrets.COVERITY_URL }}
