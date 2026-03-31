@@ -19,7 +19,6 @@ jobs:
         uses: blackduck-inc/black-duck-security-scan@v2
         with:
           # ✅ 明确启用 Coverity 产品
-          coverity_enabled: true
           bridge_disable_tls_validation: true
 
           # ✅ Coverity 服务地址（这是报错里要求的）
