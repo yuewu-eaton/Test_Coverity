@@ -13,7 +13,7 @@ jobs:
 
     # ✅ 核心修改：让 Node / Bridge / Java 信任 Zscaler Root CA
     env:
-      NODE_EXTRA_CA_CERTS: C:\actions-runner\certs\zscaler-root-ca.cer
+      NODE_EXTRA_CA_CERTS: C:\actions-runner\certs\zscaler-root-ca.pem
 
     steps:
       - name: Checkout Source
