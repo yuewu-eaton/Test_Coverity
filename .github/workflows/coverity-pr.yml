@@ -1,41 +1,28 @@
-name: Coverity Scan (PR)
+name: Coverity Scan (Windows Local)
 
 on:
   pull_request:
     branches:
       - main
-      - master
       - develop
 
 jobs:
   coverity:
-    runs-on: self-hosted
+    name: Coverity on Windows Self-hosted
+    runs-on: [self-hosted, windows]
 
-    # ✅ 核心修改：让 Node / Bridge / Java 信任 Zscaler Root CA
     env:
-      NODE_EXTRA_CA_CERTS: C:\actions-runner\certs\zscaler-root-ca.pem
+      # Coverity 登录信息（来自 GitHub Secrets）
+      COV_USER: ${{ secrets.COVERITY_USER }}
+      COV_PASS: ${{ secrets.COVERITY_PASS }}
 
     steps:
-      - name: Checkout Source
+      - name: Checkout code
         uses: actions/checkout@v4
-
-      - name: Run Coverity Scan
-        uses: blackduck-inc/black-duck-security-scan@v2
         with:
+          fetch-depth: 0
 
-          # ✅ Coverity 服务地址
-          coverity_url: ${{ secrets.COVERITY_URL }}
-
-          # ✅ 身份认证
-          coverity_user: ${{ secrets.COVERITY_USER }}
-          coverity_passphrase: ${{ secrets.COVERITY_PASSPHRASE }}
-
-          # ✅ Project 名称
-          coverity_project_name: ${{ github.event.repository.name }}
-
-          # ✅ PR 评论
-          coverity_prComment_enabled: true
-
-          # ✅ GitHub Token
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-
+      - name: Run Coverity pipeline
+        shell: cmd
+        run: |
+          run_coverity.bat
