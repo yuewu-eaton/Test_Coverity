@@ -1,31 +1,28 @@
-name: Coverity Scan (PR)
+name: Coverity Scan (Windows Local)
 
 on:
   pull_request:
     branches:
       - main
-      - master
       - develop
 
 jobs:
   coverity:
-    runs-on: ubuntu-latest
+    name: Coverity on Windows Self-hosted
+    runs-on: [self-hosted, windows]
+
+    env:
+      # Coverity 登录信息（来自 GitHub Secrets）
+      COV_USER: ${{ secrets.COVERITY_USER }}
+      COV_PASS: ${{ secrets.COVERITY_PASS }}
 
     steps:
-      - name: Checkout Source
+      - name: Checkout code
         uses: actions/checkout@v4
-
-      - name: Run Coverity Scan
-        uses: synopsys-sig-community/synopsys-github-templates/coverity@master
         with:
-          coverity-url: ${{ secrets.COVERITY_URL }}
-          coverity-user: ${{ secrets.COVERITY_USER }}
-          coverity-passphrase: ${{ secrets.COVERITY_PASSPHRASE }}
+          fetch-depth: 0
 
-          coverity-project-name: ${{ github.event.repository.name }}
-
-          create-stream-and-project: true
-
-          coverity_prComment_enabled: true
-
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run Coverity pipeline
+        shell: cmd
+        run: |
+          run_coverity.bat
