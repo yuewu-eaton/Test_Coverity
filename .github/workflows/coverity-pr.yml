@@ -5,6 +5,10 @@ on:
     branches:
       - main
       - develop
+      
+permissions:
+  contents: read
+  pull-requests: write
 
 jobs:
   coverity:
@@ -24,5 +28,7 @@ jobs:
 
       - name: Run Coverity pipeline
         shell: cmd
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           run_coverity.bat
