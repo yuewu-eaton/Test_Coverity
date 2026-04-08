@@ -1,4 +1,8 @@
 @echo off
+
+echo GITHUB_EVENT_PATH=%GITHUB_EVENT_PATH%
+echo GITHUB_REPOSITORY=%GITHUB_REPOSITORY%
+
 echo === Coverity Wrapper Start ===
 
 set REAL_SCRIPT=C:\Temp\Coverity\run_coverity.bat
