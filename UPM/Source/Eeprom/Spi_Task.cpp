@@ -883,7 +883,7 @@ void EE_versionUpdateWriteDefaultValue( parameter_t param, uint16_t OperateBits 
             read_eeprom_array( ee->eep_addr, ee->eep_length, &value, EE_OP_READ_EEPROM );
             value &= ~OperateBits;
             value |= ee->eep_DefaultValue[CoefficientsIndex] & OperateBits;
-            write_eeprom_array( ee->eep_addr, ee->eep_length, &value, EE_OP_WRITE_EEPROM );//test
+            write_eeprom_array( ee->eep_addr, ee->eep_length, &value, EE_OP_WRITE_EEPROM );//test again
             EE_execute( ee->eep_addr, &value );
         }
         TaintedSections |= ( ((int32_t)1) << GetSectionNumber( ee->eep_addr ) );
